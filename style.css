@@ -1,74 +1,74 @@
 * {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
 body {
-  background-color: #548687;
-  text-align: center;
+    background-color: #f4f6f8;
+    text-align: center;
+    padding: 20px;
 }
 
-.container {
-  height: 70vh;
-  display: flex;
-
-  justify-content: center;
-  align-items: center;
+/* Heading */
+h1 {
+    background-color: #222;
+    color: white;
+    padding: 15px;
+    margin-bottom: 30px;
 }
 
-.game {
-  height: 60vmin;
-  width: 60vmin;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 1.5vmin;
+/* Choice buttons */
+.choices {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-bottom: 30px;
 }
 
 .box {
-  height: 18vmin;
-  width: 18vmin;
-  border-radius: 1rem;
-  border: none;
-  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
-  font-size: 8vmin;
-  color: #b0413e;
-  background-color: #ffffc7;
+    width: 120px;
+    height: 120px;
+    font-size: 50px;
+    border-radius: 50%;
+    border: 3px solid #222;
+    cursor: pointer;
+    background-color: white;
+    transition: 0.3s;
 }
 
-#reset-btn {
-  padding: 1rem;
-  font-size: 1.25rem;
-  background-color: #191913;
-  color: #fff;
-  border-radius: 1rem;
-  border: none;
+.box:hover {
+    background-color: #222;
+    color: white;
+    transform: scale(1.1);
 }
 
-#new-btn {
-  padding: 1rem;
-  font-size: 1.25rem;
-  background-color: #191913;
-  color: #fff;
-  border-radius: 1rem;
-  border: none;
+/* Score board */
+.score-board {
+    display: inline-block;
+    margin: 10px 30px;
+}
+
+.score {
+    font-size: 20px;
+}
+
+.score p:first-child {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+/* Message */
+.msg-container {
+    margin-top: 30px;
 }
 
 #msg {
-  color: #ffffc7;
-  font-size: 5vmin;
-}
-
-.msg-container {
-  height: 100vmin;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  gap: 4rem;
-}
-
-.hide {
-  display: none;
+    background-color: #222;
+    color: white;
+    padding: 15px 25px;
+    font-size: 20px;
+    border-radius: 8px;
+    display: inline-block;
 }
